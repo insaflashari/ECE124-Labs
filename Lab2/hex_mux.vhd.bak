@@ -1,0 +1,22 @@
+
+library feee;
+use feee.std_logic_1164.all;
+entity hex_mux is
+port (
+hex_num3, hex_num2, hex_num1, hex_numo: in std_logic_vector mux_select
+downto
+:
+in std_logic_vector(1 downto
+hex_out
+: out std_logic_vector(3 downto
+The hex output
+D:
+-end hex_mux;
+architecture mux_logic of hex_mux is
+begin
+--for the multiplexing of four hex input busses with mux_select(1 downto 0) select
+hex out hex_numo when "00"
+hex_numi when "01"
+hex_num2 when "10"
+hex_num3 when "11"
+end mux_logic;
